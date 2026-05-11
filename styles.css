@@ -55,10 +55,19 @@ img {
 .ticker__track {
   display: flex;
   width: max-content;
-  animation: ticker 20s linear infinite;
+  animation: ticker 14s linear infinite;
+  will-change: transform;
 }
 
-.ticker span {
+.ticker__group {
+  display: flex;
+  min-width: 100vw;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ticker__group span {
   padding: 0.45rem 1.4rem;
   white-space: nowrap;
 }
